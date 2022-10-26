@@ -31,11 +31,11 @@ jobs:
         with:
           string: ${{ github.repository }}
 
-      - name: Get Short SHA Of Last Mindmeld Commit
+      - name: Get Short SHA Of Last Commit
         id: short
         run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
 
-      - name: Get Long SHA Of Last Mindmeld Commit
+      - name: Get Long SHA Of Last Commit
         id: long
         run: echo "::set-output name=sha_long::$(git rev-parse HEAD)"
 
